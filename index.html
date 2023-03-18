@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    const fechaNacimiento = "14 Marzo 1991";
+    //alert(fechaNacimiento)     //  pop-up arriba 
+ 
+
+    console.log(fechaNacimiento)
+    console.log("Hola Mundo")
+
+    let fechaActual=Date(); //valor inicial
+    fechaActual="31 Diciembre";  //valor nuevo
+    fechaActual="31 Marzo";// valor nuevo
+    console.log(fechaActual)
+
+    let datos;
+    datos=1;
+    datos="Esta soleado el dia";
+    datos= true;
+    datos= false;
+    datos= ["a","b","c"]
+    datos= [1,2,3]
+    datos=[1,3,5,7]
+    datos= [1,true,"Hola Mundo"]
+    datos=[]
+    datos={}
+    datos={   // varios tipos de objetos dentro de un objeto
+        id:123,  //clave=> id valor=>123
+        fecha:"10 Marzo",
+        sol:  false,
+        miArreglo:[1,2,3,4,5],
+        miobjetoHijo:{
+            idHijo:12,
+            luna:true,
+        }
+
+    }
+
+    console.log("contenido variable datos = ", datos)
+    console.log("tipo de la variable datos = ", typeof datos)
+
+    let diasSemana =[]
+    diasSemana.push("lunes")  //inserta valores en el array mediante la funcion push
+    diasSemana.push("Martes")
+    diasSemana.push("Miércoles")
+    diasSemana.push("Jueves")
+    diasSemana.push("Viernes")
+
+    diasSemana[0]=true
+    diasSemana[5]="familia"
+
+    
+    console.log("Contenido variable dias semana = ", diasSemana)
+    console.log("Cantidad de valores en la variable dias Semana = ", diasSemana.length )
+
+    datos={   // varios tipos de objetos dentro de un objeto
+        id:123,  //clave=> id valor=>123
+        fecha:"10 Marzo",
+        sol:  false,
+        miArreglo:[1,2,3,4,5],
+        miobjetoHijo:{
+            idHijo:12,
+            luna:true,
+        }
+
+    }
+
+    let contenidoObjeto = datos.id   // para acceder a un objeto
+    contenidoObjeto =datos.miArreglo
+    contenidoObjeto = datos.miobjetoHijo.luna
+  
+    console.log("Contenido variable contenidoObjeto= ", contenidoObjeto)
+
+    datos.id=555 // para cambiar un valor contenido en el objeto
+    datos.miArreglo = ["a","b","c"]
+
+
+    console.log("Contenido variable datos= ", datos)
+
+    console.log(Object.values(datos))// para recorrer el array
+
+    datos= [1,true,"Hola Mundo"] //otra forma de recorrer un array
+    datos.map((elemento)=> console.log(elemento))//cada elemento del array se asigna a la variable elemento y se imprime
+    //funcion map para recorrer arrays
+    
+
+    datos = "1234.15"
+    //datos = datos + 1 //concatena el dato no lo suma. Funciona como operacion y concatenacion
+
+   //datos = datos - 1 //Si realiza la operación
+    //datos = 1 + datos //Concatena el 1 al string el orden no importa
+
+    datos = Number(datos)  //Función Number para transformar string a numero
+    datos = datos + 1000
+    //datos = datos.toString() //funcion toString para convertir a string
+    datos = "Mi Número es: $"+ datos + " está en pesos colombianos"
+    //concatenar un string con un numero se va a trasnformar en un string
+    //datos = date()   // string
+    datos = Date.now()  //convierte a numero "Timestamp" marca de tiempo
+
+
+
+
+
+    console.log("Cuantos valores existen en la variable datos = ", datos)
+    console.log("tipo de dato de la variable datos = ", typeof datos) 
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</html>
