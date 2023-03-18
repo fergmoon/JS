@@ -70,7 +70,43 @@
             console.log("Ingrese a la condición else if")
         }
 
-            
+
+        console.log("EJEMPLO FOR")
+        let datosPersonales=["Luis Gómez","1111111","email@gmail.com","315555555",52]
+
+        console.log("Contenido Array datospersonales => ",datosPersonales, typeof datosPersonales) //para saber que tipo de entidad es 
+        //corchetes []=array  ;  Llaves{}=objeto
+
+
+        let DB = {} //Objeto 
+        let nombresCampos =["Nombre","Número Identificación","Correo","Celular","Edad"]
+        console.log(datosPersonales.length)  //función lenght = cuantos datos hay en el array (largo)
+
+
+        for(index = 0; index < datosPersonales.length; index++){  //recorre el array
+        
+            //console.log(datosPersonales[index])
+
+            let nombreClave = nombresCampos[index];
+
+            DB [nombreClave]= datosPersonales[index];
+           
+        }
+         console.log("Contenido objeto=>DB",DB)
+
+        let contenidoCarta = "Yo,"+ DB["Nombre"]+", identificado con la cédula : "+DB
+        ["Número Identificación"];  // Ejemplo como redactar doc. 
+
+        console.log(contenidoCarta)
+
+        console.log(DB)
+
+         
+         
+
+
+
+
         </script>
     </body>
     </html>
